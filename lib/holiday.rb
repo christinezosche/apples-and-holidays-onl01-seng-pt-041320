@@ -39,9 +39,10 @@ def add_supply_to_memorial_day(holiday_hash, supply)
 end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
-  holiday_hash.each do |season_listed, holiday_details_hash| 
-    if season_listed == :season holiday_details_hash[:holiday_name] = supply_array
-  end
+holiday_hash.each do |season_key, holiday_details_hash|
+  if season_key == season
+    holiday_details_hash[:holiday_name] = supply_array
+end
 
 holiday_hash
 end
