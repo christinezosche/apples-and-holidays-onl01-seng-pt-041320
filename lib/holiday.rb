@@ -69,7 +69,7 @@ def all_supplies_in_holidays(holiday_hash)
       else
         holiday_name_string = holiday_key.to_s.capitalize! + ": " + array.join(", ")
       end
-      puts holiday_name_string
+      puts "  #{holiday_name_string}
     end
   end  
 
