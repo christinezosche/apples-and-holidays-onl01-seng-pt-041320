@@ -63,10 +63,10 @@ def all_supplies_in_holidays(holiday_hash)
     
     holiday_details_hash.each do |holiday_key, array|
       if holiday_key == :new_years || :fourth_of_july || :memorial_day
-        puts holiday_key.to_s.split("_").each{|word|
+        puts #holiday_key.to_s.split("_").each{|word|
           word.capitalize!}.join(" ") + ": " + array.join(", ")
       else
-        puts holiday_key.to_s.capitalize! + ": " + array.join(", ")
+        puts #holiday_key.to_s.capitalize! + ": " + array.join(", ")
       end
       
     end
